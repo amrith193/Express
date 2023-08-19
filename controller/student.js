@@ -85,6 +85,7 @@ const Register = async(req ,res)=>{
             const data1 =await new StudentSchema({name,email,password})
             const save  = await data1.save()
             console.log("register sucessfully")
+            console.log("register sucessfully")
             res.send({"register sucessfdully":true,save})
         }
         
